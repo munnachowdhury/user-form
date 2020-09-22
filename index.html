@@ -7,46 +7,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main-div">
-        <form class="form-area ">
-            <fieldset class="info-area">
+    <form class="form-area ">
+        <div class="logo">
+            <!-- <div class="title">HTML <small>Form</small></div> -->
+            <img src="images/userIcon.jpg" alt="">
+        </div>
+        
+        <div class="fields">
+            <!-- User input fields -->
+            <div class="use-input">
+                <div class="first-name"><input class="input" type="text" placeholder="First name"></div>
+                <div class="last-name"><input class="input" type="text" placeholder="Last name"></div>
+                <div class="student-id"><input class="input" type="text" placeholder="Student ID"></div>
+                <div class="email"><input class="input" type="email" placeholder="Email address"></div>
+            </div><br>
+            
+            <!-- Display Radio Buttons -->                      
+            <div class="gender">             
+                <label for="genders"><small style="color:rgb(170, 168, 168)">Select your gender</small></label><br>
+                <input id="genders" type="radio" name="gender">Male</input> &nbsp;
+                <input id="genders" type="radio" name="gender">Female</input>
+            </div><br>
+                       
+            <!-- Display checkbox Buttons -->          
+            <div class="play">
+                <label for="hobby"><small style="color:rgb(170, 168, 168)">Select your favorite plays</small></label><br>
+                <input class="hobbies" id="hobby" type="checkbox" name="hobbys">Cricket  &nbsp;
+                <input class="hobbies" id="hobby" type="checkbox" name="hobbys">Football  &nbsp;
+                <input class="hobbies" id="hobby" type="checkbox" name="hobbys">Pubg
+            </div><br>
 
-                <legend>user information</legend>
-                <h2 style="color:gray">HTML Form</h2>
-
-                <!-- User input fields -->
-                <input class="input" type="text" id="fname" name="fname" placeholder="First name"><br>
-                <input class="input" type="text" id="lname" name="lname" placeholder="Last name"><br>
-                <input class="input" type="text" id="fname" name="fname" placeholder="Student ID"><br>
-                <input class="input" type="email" id="lname" name="lname" placeholder="Email address"><br><br>
-                
-                <!-- Display Radio Buttons -->
-                <label for="gender"><small style="color:gray">Select your gender</small></label><br><br>
-                <input id="gender" type="radio" name="gender">Male</input>
-                <input id="gender" type="radio" name="gender">Female</input><br><br>
-                
-                <!-- Display checkbox Buttons -->
-                <label for="hobby"><small style="color:gray">Select your favorite plays</small></label><br><br>
-                <input id="hobby" type="checkbox" name="hobbys">Cricket
-                <input id="hobby" type="checkbox" name="hobbys">Football
-                <input id="hobby" type="checkbox" name="hobbys">Basketball
-                <input id="hobby" type="checkbox" name="hobbys">Pubg<br><br>
-
-                <!-- The options element -->
-                <label for="program"><small style="color:gray">Choose a program:</small></label>
-                <select id="program">
-                <option value="">EEE</option>
+            <!-- The options element -->
+            <div class="program-area">
+                <label for="programs"><small style="color:rgb(170, 168, 168)">Choose a program:</small></label> &nbsp;
+                <select class="program" id="programs">
                 <option value="">CSE</option>
+                <option value="">EEE</option>
                 <option value="">BBA</option>
                 <option value="">English</option>
-                </select><br><br><br><br><br>
+                </select>
+            </div>
+            <br><br>
 
-                <!-- Comments area -->
-                <textarea rows="4" cols="40" placeholder="Write comments here..."></textarea><br><br>           
-                <input type="submit" value="Submit">
-
-            </fieldset>
-        </form>
-    </div>
+            <!-- Comments area -->
+            <textarea rows="4" cols="40" placeholder="Write comments here..."></textarea><br><br>
+        </div>
+        <input class="submit" type="submit" value="Submit">
+    </form>
 </body>
 </html>

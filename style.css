@@ -1,22 +1,133 @@
-body{
-    background-color: lightblue;
+* {
+    box-sizing: border-box;
 }
-.main-div{
-    display: block;
-    margin-top: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    background: #fafbfc;
 }
 .form-area{
-    height: 500px;
-    width: 350px;
+    height: 670px;
+    width: 330px;
     text-align: center;
+    padding: 20px 30px 30px 30px;
+    border-radius: 40px;
+    background: #e4e5e6;
+    box-shadow: 13px 13px 20px #cbced1,
+                -13px -13px 20px #ffffff;
 }
-.info-area{
-    background-color:lightgrey;
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+.logo {
+    /* background: url(""); */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 
+    /* logo shadow */
+    0px 0px 2px #5f5f5f,
+    /* offset */
+    0px 0px 0px 5px #ecf0f3,
+    /* bottom right */
+    8px 8px 15px #a7aaaf,
+    /* bottom left */
+    -8px -8px 15px #ffffff
+    ;
 }
-.input{
-    margin-top: 10px;
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.title {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 24px;
+    letter-spacing: 0.5px;
+}
+.fields {
+    height: 0 auto;
+    width: 100%;
+    padding: 20px 5px 5px 5px;
+}
+.use-input input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    color:rgb(170, 168, 168);
+    padding: 5px 5px 5px 1px;
+}
+.first-name, .last-name, .student-id, .email {
+    margin: 10px;
+    border-radius: 25px;
+    background-color: rgb(242, 244, 245);
+    box-shadow: inset 4px 4px 4px #cbced1, 
+                inset -4px -4px 4px #ffffff;
+}
+/* .hobbies {
+    box-shadow: 4px 4px 4px #cbced1, 
+                -4px -4px 4px #ffffff;
+} */
+.program-area, .gender, .play {
+    height: 100%;
+    width: 100%;
+    padding: 1px 5px 5px 1px;
+    border-radius:5px;
+    background-color: lightblue;
+    box-shadow: 4px 4px 4px #cbced1, 
+                -4px -4px 4px #ffffff;
+}
+.program {
+    font-weight: 700;
+    color:#555;
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    box-shadow: inset 4px 4px 4px #cbced1, 
+                inset -4px -4px 4px #ffffff;
+}
+textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    border-radius: 5px; 
+    color: #555;
+    padding: 5px 5px 5px 10px;
+    background-color: rgb(242, 244, 245);
+    box-shadow: inset 4px 4px 4px #cbced1, 
+                inset -4px -4px 4px #ffffff;
+}
+.submit {
+    border: none;
+    outline: none;
+    background: none;
+    height: 30px;
+    width: 50%;
+    padding: 5px 5px 5px 1px;
+    border-radius: 5px;
+    color: #555;
+    font-weight: 700;
+    background-color: lightblue;
+    box-shadow: 4px 4px 4px #cbced1, 
+                -4px -4px 4px #ffffff;
+}
+.submit:hover{
+    background-color: rgb(6, 161, 6);
+    color: white;
 }
